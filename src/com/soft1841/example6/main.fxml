@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.soft1841.example6.MailListController">
+    <top>
+        <AnchorPane prefHeight="50.0">
+            <Hyperlink text="通讯录" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="20"/>
+        </AnchorPane>
+    </top>
+    <right>
+
+        <VBox spacing="30">
+            <ComboBox fx:id="genderComboBox" prefWidth="120.0" promptText="性别"/>
+            <ComboBox fx:id="genderComboBox2" prefWidth="120.0" promptText="宿舍"/>
+            <TextField text="请输入关键词" fx:id="keywordsField" onMouseClicked="#enter"/>
+            <Button text="查询" onAction="#searchByKeywords"/>
+        </VBox>
+    </right>
+
+    <left>
+        <ListView fx:id="searchLater" maxWidth="400" maxHeight="1000"/>
+    </left>
+
+    <center>
+        <ListView fx:id="studentMessageListView" maxWidth="400" maxHeight="1000"/>
+    </center>
+</BorderPane>

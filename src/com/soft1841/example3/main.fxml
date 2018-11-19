@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.soft1841.example3.SingerController">
+    <!--顶部区域-->
+    <top>
+        <HBox spacing="20">
+            <Button text="歌手" onAction="#showAll"/>
+            <Button text="排行"/>
+            <padding>
+                <Insets top="30" left="300"/>
+            </padding>
+        </HBox>
+
+    </top>
+    <!--中间区域-->
+    <center>
+    <!--流式布局-->
+        <FlowPane fx:id="singerPane">
+            <padding>
+                <Insets top="20"/>
+            </padding>
+        </FlowPane>
+    </center>
+</BorderPane>

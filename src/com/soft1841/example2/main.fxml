@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.soft1841.example2.CardController"
+            fx:id="mainContainer">
+    <top>
+        <VBox spacing="50">
+            <Button text="古诗展示" onAction="#showCardOne"/>
+            <Button text="作者生平" onAction="#showCardTwo"/>
+            <padding>
+                <Insets top="20" left="800"/>
+            </padding>
+        </VBox>
+    </top>
+</BorderPane>

@@ -1,0 +1,22 @@
+/*样式文件*/
+.button{
+    -fx-background-color: rgb(255,130,71);
+    -fx-font-size: 20;
+    /*字体粗细*/
+    -fx-font-weight: 800;
+    -fx-min-width: 100px;
+    -fx-min-height: 60px;
+}
+.root{
+    -fx-background-image:url("/photo/n0.jpg") ;
+    -fx-font-size: 14px;
+}
+/*伪类样式*/
+.button:hover {
+    -fx-background-color: rgb(244, 164, 96);
+}
+#SongBox{
+    -fx-background-color: #FFFFFF;
+    -fx-max-width: 900px;
+    -fx-max-height: 500px;
+}

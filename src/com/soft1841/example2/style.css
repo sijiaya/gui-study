@@ -1,0 +1,28 @@
+.root {
+    -fx-background-image: url("/img/p2.jpg");
+    -fx-font-size: 14px;
+}
+
+.button{
+    -fx-pref-width: 100px;
+    -fx-pref-height: 40px;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: rgb(68,128,182);
+}
+
+/*伪类样式*/
+.button:hover{
+    -fx-background-color: rgb(137,188,205);
+}
+
+.label{
+    -fx-text-fill: #ffffff;
+}
+
+#cardOne{
+    -fx-background-color: rgb(137,188,205);
+}
+
+#cardTwo{
+    -fx-background-color: rgb(50,159,188);
+}

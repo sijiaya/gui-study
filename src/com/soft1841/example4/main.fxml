@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<!--布局文件-->
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.soft1841.example4.TaoBaoController"
+            fx:id="main">
+    <!--顶部区域-->
+    <top>
+        <!--按钮之间的间距-->
+        <HBox spacing="20">
+            <!--按钮名字-->
+            <Button text="天猫"  onAction="#showTaoOne"/>
+            <Button text="聚划算" onAction="#showTaoTwo"/>
+            <Button text="天猫国际"/>
+            <Button text="天猫音乐节" />
+            <DatePicker onAction="#showTaoOne"/>
+            <!--与边框的间距-->
+            <padding>
+                <Insets top="30" left="200"/>
+            </padding>
+        </HBox>
+    </top>
+    <!--中间区域-->
+    <center>
+       <StackPane>
+           <HBox fx:id="taoBox" visible="false" spacing="20" maxHeight="500"/>
+           <padding>
+               <Insets top="20" left="200"/>
+           </padding>
+           <FlowPane fx:id="taobaoPane" visible="true" hgap="20" vgap="20">
+
+           </FlowPane>
+           <padding>
+               <Insets top="30" left="100"/>
+           </padding>
+
+       </StackPane>
+    </center>
+</BorderPane>
